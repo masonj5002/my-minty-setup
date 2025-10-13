@@ -53,7 +53,7 @@ update_system() {
     echo "**Updating package lists..."
     apt update
     echo "**Upgrading system"
-    apt upgrade
+    apt upgrade -y
 }
 
 install_apt_packages() {
