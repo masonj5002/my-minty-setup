@@ -69,7 +69,7 @@ install_apt_packages() {
 #   --- MAIN ---   #
 echo "**Welcome, $(whoami)!**
 "
-sleep 0.5
+sleep 1
 echo "**Starting Linux Mint script setup...**"
 sleep 0.5
 sudo apt
