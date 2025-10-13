@@ -72,7 +72,7 @@ echo "**Welcome, $(whoami)!**
 sleep 1
 echo "**Starting Linux Mint script setup...**"
 sleep 0.5
-sudo apt
+sudo -v                                 # Access for 5 minutes -- change to sudo su onces everything works
 sleep 0.5
 
 echo "
