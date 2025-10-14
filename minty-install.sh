@@ -43,12 +43,14 @@ NOT_DEB_FILES_TO_DOWNLOAD=(
 DEBS_TO_DOWNLOAD=(
     "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
     "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
+    "https://zoom.us/client/latest/zoom_amd64.deb"
 )
 
 FLATPAKREF_FILES_TO_DOWNLOAD=(
     "https://cdn.toontownrewritten.com/launcher/linux/launcher.flatpakref"
 )
 
+#   --- Functions ---   #
 update_system() {
     echo "**Updating package lists..."
     apt update
@@ -64,6 +66,12 @@ install_apt_packages() {
         echo "**Installing $pkg..."
         apt install $pkg -y
     done
+}
+
+apply_fastly_servers() { # Linux Mint 22.2 only (possible access for other versions)
+}
+
+apply_firefox_smooth_scrolling() { # Linux Mint only
 }
 
 #   --- MAIN ---   #
@@ -91,3 +99,5 @@ echo "
 **Complete.**
 **Enjoy your machine!**"
 sleep 1
+echo "
+** Reboot now? (Y/n)** "
