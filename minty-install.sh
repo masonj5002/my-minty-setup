@@ -2,7 +2,7 @@
 script_information(){
     echo "
     #   *************************************************************************************#
-    #   MyMintySetup
+    #   my-minty-setup
     #   Author: Mason Jennings
     #   GitHub: https://github.com/masonj5002/my-minty-setup
     #   *************************************************************************************#
