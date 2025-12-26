@@ -1,13 +1,16 @@
 #!/bin/bash
-
-#   *************************************************************************************#
-#   MyMintySetup
-#   Author: Mason Jennings
-#   GitHub: https://github.com/masonj5002/my-minty-setup
-#   *************************************************************************************#
-#   This script automates basic software install and config settings on Linux Mint 22.2  
-#   Cinnamon (and similar) systems.
-#   *************************************************************************************#
+script_information(){
+    echo "
+    #   *************************************************************************************#
+    #   MyMintySetup
+    #   Author: Mason Jennings
+    #   GitHub: https://github.com/masonj5002/my-minty-setup
+    #   *************************************************************************************#
+    #   This script automates basic software install and config settings on Linux Mint 22.2  
+    #   Cinnamon (and similar) systems.
+    #   *************************************************************************************#
+    "
+}
 
 #   --- Variables ---   #
 APT_REMOVE_PACKAGES=(
@@ -75,6 +78,9 @@ apply_firefox_smooth_scrolling() { # Linux Mint only
 }
 
 #   --- MAIN ---   #
+script_information
+sleep 1
+
 echo "**Welcome, $(whoami)!**
 "
 sleep 1
