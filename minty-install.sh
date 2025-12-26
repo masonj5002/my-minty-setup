@@ -26,31 +26,29 @@ APT_INSTALL_PACKAGES=(
     "clang"
     "clang-format"
     "numlockx"                          # *Enables numlock on boot
-    "neofetch"                          # *24.04 and lower, use `fastfetch` for higher
-    "curl"                              # *Already installed on 22.2
-    "flatpak"                           # *Already installed on 22.2
+    "fastfetch"
+    # "neofetch"                          # *24.04 and lower, use `fastfetch` for higher
+    # "curl"                              # *Already installed on 22.2
+    # "flatpak"                           # *Already installed on 22.2
 )
 
 FLATPAK_APPS_FLATHUB=(
     "com.github.tchx84.Flatseal"
     "com.usebottles.bottles"
     "org.kde.kolourpaint"
-    "org.remmina.Remmina"
+    "com.tomjwatson.Emote"
 )
 
 NOT_DEB_FILES_TO_DOWNLOAD=(
     "https://www.wizard101.com/downloadGame/OtherDownload"
-    ""
+    "https://cdn.toontownrewritten.com/launcher/linux/launcher.flatpakref"
 )
 
 DEBS_TO_DOWNLOAD=(
     "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
     "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
     "https://zoom.us/client/latest/zoom_amd64.deb"
-)
-
-FLATPAKREF_FILES_TO_DOWNLOAD=(
-    "https://cdn.toontownrewritten.com/launcher/linux/launcher.flatpakref"
+    # Android Studio
 )
 
 #   --- Functions ---   #
@@ -105,5 +103,6 @@ echo "
 **Complete.**
 **Enjoy your machine!**"
 sleep 1
+exit
 echo "
 ** Reboot now? (Y/n)** "
