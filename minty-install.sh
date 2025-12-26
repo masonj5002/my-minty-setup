@@ -37,6 +37,7 @@ FLATPAK_APPS_FLATHUB=(
     "com.usebottles.bottles"
     "org.kde.kolourpaint"
     "com.tomjwatson.Emote"
+    # Discord
 )
 
 NOT_DEB_FILES_TO_DOWNLOAD=(
