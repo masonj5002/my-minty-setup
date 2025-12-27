@@ -17,7 +17,9 @@ firefox              --> CTRL + ALT + F
 chromium             --> CTRL + ALT + C
 code                 --> CTRL + ALT + V
 spotify-client       --> CTRL + ALT + S
+discord              --> CTRL + ALT + D
 ```
+
 - [ ] Change default save screenshot location to ~/Documents/Screenshots
 - [ ] Attach Google Drive storage
 - [ ] Create directory ~/Documents/Repos and create an alias on ~/Desktop
