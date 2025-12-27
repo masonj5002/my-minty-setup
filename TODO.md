@@ -31,6 +31,11 @@ discord              --> CTRL + ALT + D
 ```
 
 - [ ] Change default save screenshot location to ~/Documents/Screenshots
+    - *only works for older version of gnome-screenshot, apparently*
+``` bash
+gsettings set org.gnome.gnome-screenshot auto-save-directory "file:///home/mason/Documents/Screenshots"
+
+```
 - [ ] Attach Google Drive storage
 - [ ] Create directory ~/Documents/Repos and create an alias on ~/Desktop
 - [ ] Set specific Desktop wallpaper (single photo or slideshow)
