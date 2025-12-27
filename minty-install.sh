@@ -20,16 +20,20 @@ APT_REMOVE_PACKAGES=(
 APT_INSTALL_PACKAGES=(
     "chromium"
     "spotify-client"
-    "ttf-mscorefonts-installer"
+    # "ttf-mscorefonts-installer"
     "gimp"
     "git"
     "clang"
     "clang-format"
     "numlockx"                          # *Enables numlock on boot
-    "fastfetch"
-    # "neofetch"                          # *24.04 and lower, use `fastfetch` for higher
+    # "fastfetch"                         # 26.04 and above
+    "neofetch"                          # *24.04 and lower, use `fastfetch` for higher
     # "curl"                              # *Already installed on 22.2
     # "flatpak"                           # *Already installed on 22.2
+    "steam-installer"
+    "pychess"
+    "aisleriot" # solitaire
+    "gnome-cards-data"
 )
 
 FLATPAK_APPS_FLATHUB=(
@@ -37,7 +41,7 @@ FLATPAK_APPS_FLATHUB=(
     "com.usebottles.bottles"
     "org.kde.kolourpaint"
     "com.tomjwatson.Emote"
-    # Discord
+    "com.discordapp.Discord"
 )
 
 NOT_DEB_FILES_TO_DOWNLOAD=(
@@ -50,6 +54,7 @@ DEBS_TO_DOWNLOAD=(
     "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
     "https://zoom.us/client/latest/zoom_amd64.deb"
     # Android Studio
+    # Virtual Box (add repo)
 )
 
 #   --- Functions ---   #
