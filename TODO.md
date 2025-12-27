@@ -3,10 +3,20 @@
 - [ ] If installed, disable zoom miniviewer
 ``` bash
 nano ~/.config/zoomus.conf
-# set enableMiniWindow=false
+set enableMiniWindow=false
 ```
 - [ ] install latest virtualbox from oracle (for 24.04)
 - [ ] Firefox Smooth scrolling configs
+
+``` bash
+MOZ_USE_XINPUT2=1 | sudo tee /etc/profile.d/use-xinput2.sh
+```
+
+- [ ] Fix KolourPaint theme by setting it to light
+
+``` bash
+flatpak override --user --env=GTK_THEME=Adwaita:light org.kde.kolourpaint
+```
 - [ ] Keyboard shortcuts for Cinnamon 
 
 ``` bash
